@@ -1,0 +1,16 @@
+* primeiro é necessário dar acesso para todos os usuário na rede em 
+sua pasta que deseja compartilhar os arquivos no GIT.
+* comando para inicializar um respositório em rede 'git init --bare'
+* o primeiro que for utilizar terá que clonar o repositório criar a base e enviar para o repositório na rede para que os outros usuários possam utilizar:
+       ->git clone file:////nomeserver/pastadeprojetos/projeto [se quiser adiciona o nome da nova pasta de arquivo]
+       ->adicionar os arquivos que deseja criar o repositorio git add . [comando para adicionar tudo], e da o commit
+       -> é preciso dar o push nos arquivos para subir para o servidor, é necessário saber o nome do remote, por padrão se chama origin, mas para saber do executar o comando 'git remote'
+       ->para subir os arquivos executar o comando 'git push origin master'
+       
+* para avisar os outros desenvolvedores que existe arquivos importante que devem ser sincronizados sem alterar os arquivos atual
+         -> para isso é necessário utilizar o git pull, será feito tipo um merge na qual ele trás todos os arquivos do repositório em sobrescrever os atuais.
+         -> git pull origin master
+ 
+
+
+*OBS: o comando 'git init' inicia um repositório padrão, usado em local
