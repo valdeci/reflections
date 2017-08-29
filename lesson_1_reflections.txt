@@ -1,0 +1,81 @@
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+
+pwd # print working directory - shows what directory you are in
+ls  # list the files in this directory
+
+
+Como ter fácil acesso a todo o histórico de um arquivo pode torná-lo um programador mais eficiente no longo prazo?
+ ter o acesso o histórico pode tornar o acesso e refatoração de coidgo mais eficiente
+
+ 
+ -- o GIT foi criado pelo Linus Torvals e ele batizava sua criações com base nele mesmo
+   GIT no britanico siginifica"uma pessoa desagradavel"
+   
+-- Sistemas desenvolvidos para controle de versões anteriores são denominados VCS (Current Version Systems) *exemplo o JEDI  
+-- outro sistema é o SVN, também conhecido como subversion
+ --MErcurial é outro abreviado como hg, simboolo elementar de mercurio
+ 
+ 
+ -- NO GIT os pontos de verificação criados são denominados Commits, cada um representa uma versão do conteudo em um momento. O mesmo exige uma mensagem
+  de commit toda vez que um commit é criado
+  
+  
+  -CONCEPT
+  -VERSION  CONTROL - Permite o controle  sistematico de versão do conteudo, qualquer coisa que facilite criar, armazenar acessar as versões 
+  
+  
+  --git
+  se navegar para o diretório com o git bash e dar o comando git log, exibirá todos os commits
+  
+**Como usar os comandos git log e git diff para visualizar o histórico dos arquivos?  
+    primeiro executa $ git log mostrará todos as alterações, depois executa git diff adicionando as ids das alterações exemplo git diff 234234234234 23423423423,
+	as de cima são as mais recentes, portanto se quiser comprar as alterações devemos comparar  com a debaixo, esta que é a mais antiga.
+
+	
+	- erros lançados pelo GIT  
+    	 SHOULD NOT BE DOING AN OCTOPUS
+	  -Não deve estar realizando um octopus 
+	    Octopus é uma estratégia que o Git usa para combinar muitas versãoes diferentes de código
+		Essa mensagem podera aparecer  se você tentar usar essa estratégia em uma situação inadequada
+     
+	 YOU ARE IN 'DETACHED HEAD' STATE 
+     - Você está no estado de 'HEAD desanexado'	 
+	   Head é o que o GIT chama de commit no qual você está trabalhando. Você pode 'desanexar' 
+	   o HEAD alternando para um commit anterior, que veremos no proximo video. apesar do que parecem
+	   na verdade não é ruim desanexar um Head. O GIT só avisa para que você possa perceber o que está fazendo
+
+	   PANIC!(THE 'IMPOSSIBLE' HAPPENED)
+     - Pânico! (o 'impossível' aconteceu)
+       Essa é uma mensagem de erro real, mas não é só uma saída do Git. Em vez disso, 
+	   trata-se de uma saída do GHC, o compilador de uma linguagem de programação 
+	   chamada Haskell. Ela está reservada para erros particularmente surpreendentes!
+
+
+--a ação de converter um arquivo temporariamente para um
+Commit anterior	é chamado de CHECKOUT.
+
+- Diferente dos checkouts feito em SVN, no git você restaura todos os arquivos 
+para o modo que estavam na hora em que o COMMIT foi feito.
+   porque retornaria? Por exemplo um Bug foi introduzido, mas você não save ao certo qual commit fez isso
+   
+
+
+
+
+
+	
+	
+	
+  
+    
+ 
+ 
+
+
+
+

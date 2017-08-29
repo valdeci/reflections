@@ -1,0 +1,60 @@
+-- Como criar um novo repositório no GIT
+  obs. pode ser criado um repositório git em qualquer pasta mesmo contendo arquivos.
+  
+  antes de ser criado o diretório o arquivo do .git não existe
+  
+-- Escolhendo quais alterações vão para o commit
+
+no Git existe uma área intermediária, chamada area de transferencia, esta que indica quais arquivos estão prontos para ser commitados
+  *diretórios
+    Working Directory, Staging area (área de reparo)e repositoty
+	
+	
+  
+- Em que se difere a área de preparação do diretório de trabalho e do repositório? Qual valor você acha que ela oferece?
+a área de preparação garante que um conjunto de alterações nos fontes sejam adicionados em apenas um commit. garatindo assim a facilidade de retorno caso 
+necessário
+
+
+--Comparação de arquivos entre 
+WORKING DIRECTORY | STAGING AREA | REPOSITORY
+ - para comparar arquivos entre WORKING DIRECTORY e STAGING AREA utiliza-se
+   *** git diff 'sem paramêtros mesmo'
+ - para comparar arquivos entre STAGING AREA e REPOSITORY utiliza-se 
+   *** git diff --stage
+   
+ - caso seja necessário retirar arquivos da area de preparação ou de trabalho, que por exemplo
+    foi adicionado e não será mais necessário é só executar o comando 
+   ***git reset --hard  
+ 
+ 
+ Como você pode usar a área de preparação para garantir que tenha um commit por alteração lógica?
+ Para gerantir que exista apenas um commit por alteração é necessário comprar sempre as alterações antes de dar o commit nos fontes
+ 
+ 
+ case seja necessário criar mais de uma versão do histórico linear de commit, ou seja uma ramificação é necessário
+ utilizar o BRANCH pois assim você poderá trabalhar em versões diferentes mesmo consertando BUGS nas outras versões
+ 
+ existe 3 tipos de BRANCHS
+ 
+ o primeiro é o MASTER
+   esse nome é dados ao principal branch criado na maioria dos repositórios GIT, sempre q se cria um repositório o git cria um branch master
+   
+ 
+ Quais são algumas das situações em que branches seriam úteis para manter seu histórico organizado? 
+ os BRANCHS são utilizados para criar uma nova versão do repósitório, mantendo ativo a versão MASTER
+ Como branches ajudariam?
+   os branchs são necessários para manter as versões de todas as versões do branch
+   
+ Como os diagramas ajudam a visualizar a estrutura de branches?
+  com os diagramas é mais fácil visualizar a hierarquia dos branchs
+  
+  comando completo que Caroline digita para visualizar a representação visual do histórico de commits é 
+     git log --graph --oneline master coins *[master coins] são os branchs
+	 
+	 
+   
+ 
+
+
+  
